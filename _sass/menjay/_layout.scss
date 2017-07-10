@@ -1,0 +1,140 @@
+// ** Site Header **
+
+.site-header {
+   // display: none;
+   // position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+   // border-bottom: 1px solid #eee;
+   // padding: ($spacing-unit * .6);
+   margin-top: ($spacing-unit * 2);
+}
+
+.site-title {
+   text-decoration: none;
+   font-family: $title-font-family;
+   font-size: $title-font-size / 3;
+   font-weight: $title-font-weight;
+   color: $copy-color;
+}
+
+.site-nav {
+
+   .page-link {
+      text-decoration: none;
+      font-family: $label-font-family;
+      font-size: $label-font-size;
+      font-weight: $label-font-weight;
+      color: $copy-color;
+
+      // Gaps between nav items, but not on the last one
+      &:not(:last-child) {
+         margin-right: ($spacing-unit * 1.5);
+
+         @include media-query($small-screen) {
+            margin-right: ($spacing-unit);
+         }
+      }
+   }
+}
+
+
+
+// ** Site Footer **
+
+.site-footer {
+   background: #FAFAFA;
+   border-top: 1px solid $horiz-rule-color;
+   padding: $spacing-unit 0;
+}
+
+
+
+// ** Page Content (Default Layout) **
+
+.page-content {
+  padding: $spacing-unit 0;
+}
+
+
+
+// ** Home **
+
+.post-list {
+   margin: 0;
+
+   list-style: none;
+}
+
+.post-link {
+   text-decoration: none;
+   color: $copy-color;
+}
+
+.post-preview {
+   margin-top: 2em;
+   margin-bottom: 6em;
+
+   // padding: $spacing-unit * 2;
+   // box-shadow: 0 0 4px #ddd;
+}
+
+// ** Posts **
+
+.post-meta {
+   font-size: $label-font-size;
+   font-weight: $label-font-weight;
+   color: $label-color;
+}
+
+.post-title {
+   margin-top: $spacing-unit / 2.5;
+   margin-bottom: $spacing-unit / 2.5;
+
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  font-weight: $header-font-weight;
+  line-height: $header-font-line-height;
+}
+
+.post-excerpt {
+   font-size: $body-font-size * .95;
+   font-weight: $body-font-weight;
+   line-height: $body-font-line-height;
+}
+
+.post-content {
+
+   h2,h3,h4 {
+      font-family: $header-font-family;
+   }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+     margin-top: $spacing-unit;
+     margin-bottom: $spacing-unit;
+  }
+
+   a {
+      color: $copy-color;
+      text-decoration: none;
+      border-bottom: 1px solid $label-color;
+
+      &:hover {
+         border-bottom: 1px solid $copy-color;
+      }
+   }
+
+} // end .post-content

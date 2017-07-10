@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// ** Our variables **
+
+// Global Colors
+$background-color:   #FFF;
+$copy-color:         #1B1B1B;
+$label-color:        lighten($copy-color, 45%);
+$brand-color:        #41E170;
+$horiz-rule-color:   #ddd;
+
+// Body Copy
+$body-font-family:   "Open Sans", sans-serif;
+$body-font-size:     18px;
+$body-font-weight:   400;
+$body-font-line-height: 1.8;
+
+// Label Copy
+$label-font-family:   "Open Sans", sans-serif;
+$label-font-size:     $body-font-size * 1;
+$label-font-weight:   300;
+$label-font-line-height: 1;
+
+// Header Copy
+$header-font-family: "Hind", sans-serif;
+$header-font-size:   $body-font-size * 3.25;
+$header-font-weight: 700;
+$header-font-line-height: 1.2;
+
+// Title Copy
+$title-font-family: "Hind", sans-serif;
+$title-font-size:   $body-font-size * 4;
+$title-font-weight: 700;
+$title-font-line-height: 1;
+
+
+// Spacing
+$spacing-unit:     30px;
+
+// Content Width
+$content-width:    800px;
+
+// Media Query Content Widths
+$small-screen: 600px;
+
+
+
+// Import partials from the `menjay` theme.
+@import "menjay";
