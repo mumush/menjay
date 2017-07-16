@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 18px/1.8 "Open Sans", sans-serif;
+  font: 300 18px/1.8 "Merriweather", sans-serif;
   color: #1B1B1B;
   background-color: #FFF;
   -webkit-text-size-adjust: 100%;
@@ -65,14 +65,14 @@ h1, h2, h3, h4, h5, h6 {
  * Blockquotes
  */
 blockquote {
-  color: #eee;
-  border-left: 4px solid #eee;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
+  margin: 60px;
+  padding-left: 30px;
+  border-left: 8px solid #535A78;
+  color: #1B1B1B;
+  font-family: "Merriweather", sans-serif;
+  font-size: 22.5px;
+  font-weight: 300;
   font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
 
 /**
  * Code formatting
@@ -126,19 +126,20 @@ pre {
   .icon > svg path {
     fill: #eee; }
 
-.site-header {
+.wrapper {
   margin-top: 60px; }
 
 .site-title {
   text-decoration: none;
   font-family: "Hind", sans-serif;
-  font-size: 24px;
+  font-size: 13.5px;
   font-weight: 700;
-  color: #1B1B1B; }
+  color: #1B1B1B;
+  text-transform: uppercase; }
 
 .site-nav .page-link {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Hind", sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: #1B1B1B; }
@@ -165,25 +166,44 @@ pre {
   color: #1B1B1B; }
 
 .post-preview {
-  margin-top: 2em;
-  margin-bottom: 6em; }
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 60px;
+  padding-bottom: -5em;
+  border-radius: 2px;
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.125s ease-in-out; }
+  .post-preview:hover {
+    box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.8); }
+
+.separator {
+  display: block;
+  height: 1px;
+  width: 25%;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0 auto;
+  opacity: .05; }
 
 .post-meta {
-  font-size: 18px;
+  margin: 0;
+  font-family: "Hind", sans-serif;
+  font-size: 13.5px;
   font-weight: 300;
-  color: #8e8e8e; }
+  color: #8e8e8e;
+  text-transform: uppercase; }
 
 .post-title {
   margin-top: 12px;
   margin-bottom: 12px;
   font-family: "Hind", sans-serif;
-  font-size: 58.5px;
+  font-size: 40.5px;
   font-weight: 700;
   line-height: 1.2; }
 
 .post-excerpt {
   font-size: 17.1px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.8; }
 
 .post-content h2, .post-content h3, .post-content h4 {

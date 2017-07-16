@@ -1,22 +1,24 @@
 // ** Site Header **
 
 .site-header {
-   // display: none;
-   // position: fixed;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-   // border-bottom: 1px solid #eee;
-   // padding: ($spacing-unit * .6);
-   margin-top: ($spacing-unit * 2);
+
+}
+
+.wrapper {
+
+  margin-top: $spacing-unit * 2;
+
 }
 
 .site-title {
-   text-decoration: none;
-   font-family: $title-font-family;
-   font-size: $title-font-size / 3;
-   font-weight: $title-font-weight;
-   color: $copy-color;
+
+  text-decoration: none;
+  font-family: $title-font-family;
+  font-size: $title-font-size * .75;
+  font-weight: $title-font-weight;
+  color: $copy-color;
+  text-transform: uppercase;
+
 }
 
 .site-nav {
@@ -73,19 +75,43 @@
 }
 
 .post-preview {
-   margin-top: 2em;
-   margin-bottom: 6em;
 
-   // padding: $spacing-unit * 2;
-   // box-shadow: 0 0 4px #ddd;
+   margin-top: $spacing-unit * 2;
+   margin-bottom: $spacing-unit * 2;
+   padding: $spacing-unit * 2;
+   padding-bottom: -5em;
+
+   border-radius: 2px;
+   box-shadow: 0 0 1.5px rgba(0,0,0,0.6);
+   transition: box-shadow 0.125s ease-in-out;
+
+   &:hover {
+      box-shadow: 0 0 1.5px rgba(0,0,0,0.8);
+   }
+
+}
+
+.separator {
+
+  display: block;
+  height: 1px;
+  width: 25%;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0 auto;
+  opacity: .05;
+
 }
 
 // ** Posts **
 
 .post-meta {
-   font-size: $label-font-size;
+   margin: 0;
+   font-family: $label-font-family;
+   font-size: $label-font-size * .75;
    font-weight: $label-font-weight;
    color: $label-color;
+   text-transform: uppercase;
 }
 
 .post-title {
