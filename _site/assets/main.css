@@ -167,22 +167,14 @@ pre {
 
 .post-preview {
   margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 60px;
-  padding-bottom: -5em;
-  border-radius: 2px;
-  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.125s ease-in-out; }
-  .post-preview:hover {
-    box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.8); }
+  margin-bottom: 60px; }
 
 .separator {
   display: block;
   height: 1px;
-  width: 25%;
   border: 0;
   border-top: 1px solid #000;
-  margin: 0 auto;
+  margin: 0;
   opacity: .05; }
 
 .post-meta {

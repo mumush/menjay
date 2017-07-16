@@ -78,16 +78,16 @@
 
    margin-top: $spacing-unit * 2;
    margin-bottom: $spacing-unit * 2;
-   padding: $spacing-unit * 2;
-   padding-bottom: -5em;
-
-   border-radius: 2px;
-   box-shadow: 0 0 1.5px rgba(0,0,0,0.6);
-   transition: box-shadow 0.125s ease-in-out;
-
-   &:hover {
-      box-shadow: 0 0 1.5px rgba(0,0,0,0.8);
-   }
+  //  padding: $spacing-unit * 2;
+  //  padding-bottom: -5em;
+   //
+  //  border-radius: 2px;
+  //  box-shadow: 0 0 1.5px rgba(0,0,0,0.6);
+  //  transition: box-shadow 0.125s ease-in-out;
+   //
+  //  &:hover {
+  //     box-shadow: 0 0 1.5px rgba(0,0,0,0.8);
+  //  }
 
 }
 
@@ -95,10 +95,9 @@
 
   display: block;
   height: 1px;
-  width: 25%;
   border: 0;
   border-top: 1px solid #000;
-  margin: 0 auto;
+  margin: 0;
   opacity: .05;
 
 }
