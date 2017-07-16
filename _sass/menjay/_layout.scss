@@ -5,9 +5,7 @@
 }
 
 .wrapper {
-
   margin-top: $spacing-unit * 1.5;
-  margin-bottom: 0;
 
 }
 
@@ -57,7 +55,7 @@
 // ** Page Content (Default Layout) **
 
 .page-content {
-  padding: $spacing-unit 0;
+  // padding: $spacing-unit 0;
 }
 
 
@@ -66,7 +64,6 @@
 
 .post-list {
    margin: 0;
-
    list-style: none;
 }
 
@@ -80,15 +77,13 @@
    padding-top: $spacing-unit * 1.5;
    padding-bottom: $spacing-unit * 1.5;
 
-   border-bottom: 1px solid rgba(0,0,0,.05);
-
-  // &:hover {
-  //   border-bottom-color: rgba(0,0,0,.15);
-  // }
+   border-top: 1px solid rgba(0,0,0,.05);
 
   &:hover .post-title {
     color: $brand-color;
   }
+
+
 
 }
 
@@ -112,7 +107,7 @@
   font-weight: $header-font-weight;
   line-height: $header-font-line-height;
 
-  transition: color .1s ease-in-out;
+  transition: color .125s ease-in-out;
 }
 
 .post-excerpt {
