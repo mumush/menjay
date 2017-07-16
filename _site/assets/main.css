@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 blockquote {
   margin: 60px;
   padding-left: 30px;
-  border-left: 8px solid #535A78;
+  border-left: 8px solid #36CC7F;
   color: #1B1B1B;
   font-family: "Merriweather", sans-serif;
   font-size: 22.5px;
@@ -166,16 +166,13 @@ pre {
   color: #1B1B1B; }
 
 .post-preview {
-  margin-top: 60px;
-  margin-bottom: 60px; }
-
-.separator {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #000;
-  margin: 0;
-  opacity: .05; }
+  padding-top: 37.5px;
+  padding-bottom: 52.5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  .post-preview:hover {
+    border-bottom-color: rgba(0, 0, 0, 0.15); }
+  .post-preview:hover .post-title {
+    color: #36CC7F; }
 
 .post-meta {
   margin: 0;
@@ -189,9 +186,10 @@ pre {
   margin-top: 12px;
   margin-bottom: 12px;
   font-family: "Hind", sans-serif;
-  font-size: 40.5px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.2; }
+  line-height: 1.2;
+  transition: color .1s ease-in-out; }
 
 .post-excerpt {
   font-size: 17.1px;

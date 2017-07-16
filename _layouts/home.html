@@ -10,13 +10,11 @@ layout: default
     {% for post in site.posts %}
          <a class="post-link" href="{{ post.url | relative_url }}">
             <li class="post-preview">
-               <p class="post-meta">Audio Vlog</p>
+               <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
                <h2 class="post-title">{{ post.title | escape }}</h2>
                <p class="post-excerpt">{{ post.excerpt | truncatewords:50 | remove: '<p>' | remove: '</p>' }}</p>
             </li>
          </a>
-
-         <hr class="separator" />
 
     {% endfor %}
   </ul>
