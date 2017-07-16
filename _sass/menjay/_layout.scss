@@ -6,7 +6,8 @@
 
 .wrapper {
 
-  margin-top: $spacing-unit * 2;
+  margin-top: $spacing-unit * 1.5;
+  margin-bottom: 0;
 
 }
 
@@ -23,22 +24,22 @@
 
 .site-nav {
 
-   .page-link {
-      text-decoration: none;
-      font-family: $label-font-family;
-      font-size: $label-font-size;
-      font-weight: $label-font-weight;
-      color: $copy-color;
-
-      // Gaps between nav items, but not on the last one
-      &:not(:last-child) {
-         margin-right: ($spacing-unit * 1.5);
-
-         @include media-query($small-screen) {
-            margin-right: ($spacing-unit);
-         }
-      }
-   }
+  //  .page-link {
+  //     text-decoration: none;
+  //     font-family: $label-font-family;
+  //     font-size: $label-font-size;
+  //     font-weight: $label-font-weight;
+  //     color: $copy-color;
+   //
+  //     // Gaps between nav items, but not on the last one
+  //     &:not(:last-child) {
+  //        margin-right: ($spacing-unit * 1.5);
+   //
+  //        @include media-query($small-screen) {
+  //           margin-right: ($spacing-unit);
+  //        }
+  //     }
+  //  }
 }
 
 
@@ -46,9 +47,9 @@
 // ** Site Footer **
 
 .site-footer {
-   background: #FAFAFA;
-   border-top: 1px solid $horiz-rule-color;
-   padding: $spacing-unit 0;
+  //  background: #FAFAFA;
+  //  border-top: 1px solid $horiz-rule-color;
+  //  padding: $spacing-unit 0;
 }
 
 
@@ -76,14 +77,14 @@
 
 .post-preview {
 
-   padding-top: $spacing-unit * 1.25;
-   padding-bottom: $spacing-unit * 1.75;
+   padding-top: $spacing-unit * 1.5;
+   padding-bottom: $spacing-unit * 1.5;
 
    border-bottom: 1px solid rgba(0,0,0,.05);
 
-  &:hover {
-    border-bottom-color: rgba(0,0,0,.15);
-  }
+  // &:hover {
+  //   border-bottom-color: rgba(0,0,0,.15);
+  // }
 
   &:hover .post-title {
     color: $brand-color;
